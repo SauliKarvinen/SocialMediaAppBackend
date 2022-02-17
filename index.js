@@ -11,8 +11,6 @@ app.use("/", home);
 app.use("/login", login);
 app.use("/signup", signup);
 
-//console.log("MODE:", process.env.ENV_MODE);
-
 if (process.env.ENV_MODE === "development") {
   console.log("DEV!");
   app.listen(PORT, () => {
