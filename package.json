@@ -1,0 +1,28 @@
+{
+  "name": "socialmediaappbackend",
+  "version": "1.0.0",
+  "description": "Authentication, endpoint authorization and test for Social Media App",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env ENV_MODE=development nodemon index.js",
+    "test": "cross-env ENV_MODE=test jest",
+    "test:watch": "cross-env ENV_MODE=test jest --watch"
+  },
+  "author": "Sauli Karvinen",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.2"
+  }
+}
