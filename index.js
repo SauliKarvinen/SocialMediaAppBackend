@@ -2,10 +2,14 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const home = require("./Routes/home");
+const login = require("./Routes/login");
+const signup = require("./Routes/signup");
 
 const PORT = process.env.PORT || 3000;
 
 app.use("/", home);
+app.use("/login", login);
+app.use("/signup", signup);
 
 //console.log("MODE:", process.env.ENV_MODE);
 
