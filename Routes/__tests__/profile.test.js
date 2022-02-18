@@ -8,3 +8,5 @@ describe("Tests for endpoint /profile", () => {
     expect(response.status).toBe(403);
   });
 });
+
+test("", () => {});

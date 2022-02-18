@@ -29,4 +29,15 @@ describe("Tests for endpoint /login", () => {
 
     expect(response.status).toBe(200);
   });
+
+  test("Successful login returns token", async () => {
+    const user = {
+      username: "tester",
+      password: "password",
+    };
+
+    const response = await request.post("/login").send(user);
+
+    expect(response.token).not.toBeUndefined();
+  });
 });

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env ENV_MODE=development nodemon index.js",
     "test": "cross-env ENV_MODE=test jest",
-    "test:watch": "cross-env ENV_MODE=test jest --watch"
+    "test:watch": "cross-env ENV_MODE=test jest --watch --detectOpenHandles"
   },
   "author": "Sauli Karvinen",
   "license": "ISC",

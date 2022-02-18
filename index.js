@@ -17,11 +17,9 @@ app.use("/login", login);
 app.use("/signup", signup);
 
 if (process.env.ENV_MODE === "development") {
-  console.log("DEV!");
   app.listen(PORT, () => {
     console.log(`Server up and running on port ${PORT}`);
   });
 } else {
-  console.log("TEST!");
   module.exports = app;
 }

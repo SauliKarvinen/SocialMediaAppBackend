@@ -6,4 +6,10 @@ const hashpw = async (password) => {
   return hashedpw;
 };
 
-module.exports = hashpw;
+const comparePasswords = (stringpw, hahspw) => {
+  const result = bcrypt.compare(stringpw, hashpw);
+
+  console.log("result:", result);
+};
+
+module.exports = { hashpw: hashpw, comparePasswords: comparePasswords };

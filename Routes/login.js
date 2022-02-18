@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const User = require("../Database/Schemas/User");
 const hashpw = require("../Authentication/passwordhash");
 
 router.get("/", (req, res) => {
