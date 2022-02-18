@@ -1,4 +1,4 @@
-const mongoose = rewuire("mongoose");
+const mongoose = require("mongoose");
 
 const User = mongoose.Schema({
   name: String,
@@ -16,20 +16,5 @@ const User = mongoose.Schema({
   password: String,
   refreshTokens: [String],
 });
-
-/* 
-this.name = name;
-    this.profileimg = profileimg;
-    this.profilebackgroundimage = profilebackgroundimage;
-    this.email = email;
-    this.title = title;
-    this.organization = organization;
-    this.posts = [];
-    this.bio = "";
-    this.contacts = [];
-    this.github = "";
-    this.workhistory = [];
-    this.messages = [];
-*/
 
 module.exports = mongoose.model("userschema", User);
